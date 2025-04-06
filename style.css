@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    font-display: swap;
+    justify-content: center;
+    height: inherit;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator input {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.calculator button {
+    width: 100%;
+    height: 72px; /* Square buttons */
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.calculator button:hover {
+    background-color: #e0e0e0;
+}
+
+.calculator button:active {
+    transform: scale(0.95);
+    background-color: #ccc;
+}
+
+.calculator button:focus {
+    outline: none;
+}
+
+.calculator button.operator {
+    background-color: #ff92be; /* Pink for operators */
+    color: white;
+}
+
+.calculator button.operator:hover {
+    background-color: #f09ebd;
+}
+
+.calculator button.equal {
+    background-color: #63c9b4; /* Green for equals */
+    color: white;
+}
+
+.calculator button.equal:hover {
+    background-color: #4ba78f;
+}
+
+.calculator button.clear {
+    background-color: #ffef78; /* Yellow for clear */
+    color: white;
+}
+
+.calculator button.clear:hover {
+    background-color: #e0d35d;
+}
+body.dark-mode {
+    background: linear-gradient(320deg, #121212, #1e1e1e, #2c2c2c);
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .calculator {
+    background-color: #2c2c2c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  body.dark-mode .calculator input {
+    background-color: #444;
+    color: #f1f1f1;
+    border-color: #666;
+  }
+  
+  body.dark-mode .calculator button {
+    background-color: #555;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .calculator button:hover {
+    background-color: #666;
+  }
+  
+  body.dark-mode .calculator button.operator {
+    background-color: #bb6fa9;
+  }
+  
+  body.dark-mode .calculator button.equal {
+    background-color: #3caea3;
+  }
+  
+  body.dark-mode .calculator button.clear {
+    background-color: #c9c75d;
+  }
+  
